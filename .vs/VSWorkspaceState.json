@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\compItems",
+    "\\src\\app\\dash_board",
+    "\\src\\app\\dash_board\\cardtwo",
+    "\\src\\app\\dash_board\\main"
+  ],
+  "SelectedNode": "\\src\\app\\dash_board\\cardtwo\\cardtwo.component.css",
+  "PreviewInSolutionExplorer": false
+}

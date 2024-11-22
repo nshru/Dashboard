@@ -1,0 +1,10 @@
+<div class="checkbox-container">
+  <input type="checkbox"
+         [checked]="checked"
+         [disabled]="disabled"
+         [required]="required"
+         [attr.aria-label]="label"
+         (change)="onChange($event)" />
+  <label>{{ label }}</label>
+</div>
+

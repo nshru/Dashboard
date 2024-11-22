@@ -1,0 +1,37 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.equal-height {
+  height: 230px;
+  width: 320px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin: 25px;
+}
+
+app-button {
+  border-radius: 10px;
+}
+
+.content1 {
+  padding: 15px;
+}
+
+h3, p {
+  margin-top: 13px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.content2 {
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 20px;
+}

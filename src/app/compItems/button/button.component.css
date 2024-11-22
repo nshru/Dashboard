@@ -1,0 +1,49 @@
+/* Basic Button Styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+/* Button Sizes */
+.btn-small {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.btn-medium {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+.btn-large {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* Button Colors */
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-accent {
+  background-color: green;
+  color: white;
+}
+
+.btn-warn {
+  background-color: red;
+  color: white;
+}
+
+button i {
+  margin-right: 8px;
+}

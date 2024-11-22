@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-6 equal-height">
+      <div class="column1">
+        <h4>Your Pie Chart</h4>
+        <highcharts-chart [Highcharts]="Highcharts"
+                          [options]="pieChartOptions"
+                          style="width: 100%; height: 280px; display: block;"></highcharts-chart>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-6 equal-height1">
+      <div class="column2">
+        <div class="col-md-12 col-lg-6 equal-height1">
+          <div class="column2">
+            <div class="Title">
+              <div>
+                <h2 style="text-align:center;margin-left:30px;">Trending NFts</h2>
+              </div>
+              <div class="slide">
+                <button (click)="moveSlide(-1)" class="prev">&#10094;</button>
+                <button (click)="moveSlide(1)" class="next">&#10095;</button>
+              </div>
+            </div>
+            <div class="column2-contet">
+              <div class="slideshow-container">
+
+
+                <div *ngFor="let card of cards; let i = index" class="content1" [class.active]="currentIndex === i">
+                  <div class="image">
+                    <img [src]="card.img" alt="content1" />
+                    <h3>{{ card.title }}</h3>
+                    <span style="color:brown;">{{ card.artist }}</span>
+                  </div>
+                  <div class="content1-info">
+                    <div class="bid">
+                      <h4 style="color:blue;">Current Bid: {{ card.bid }} ETH</h4>
+                    </div>
+                    <div class="button-app">
+                      <app-button label="Place Bid"
+                                  color="primary"
+                                  size="medium"
+                                  width="100px"
+                                  radius="10px">
+                      </app-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

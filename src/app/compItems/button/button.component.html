@@ -1,0 +1,14 @@
+<button [type]="type" (click)="handleClick()" [ngClass]="{
+    'btn-primary': color === 'primary',
+    'btn-accent': color === 'accent',
+    'btn-warn': color === 'warn',
+    'btn-small': size === 'small',
+    'btn-medium': size === 'medium',
+    'btn-large': size === 'large',
+  }"
+        [ngStyle]="{ width: width,
+                      'border-radius': radius}">
+  <i *ngIf="icon" [class]="icon"></i>
+  {{ label }}
+
+</button>

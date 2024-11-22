@@ -1,0 +1,24 @@
+<!--<div class="dropdown-container">
+  <label></label>
+  <select [disabled]="disabled" [(ngModel)]="selectedValue" (change)="onSelect($event)">
+    <option *ngFor="let option of options" [value]="option.countryCode">
+      <img [src]="option.flagUrl" alt="Flag of  class="flag-img" />
+
+    </option>
+  </select>
+</div>-->
+<div class="dropdown-container1">
+  <div class="dropdown" (click)="toggleDropdown()">
+    <span>{{ selectedValue ? selectedValue.countryName : 'Select a Langugge' }}</span>
+    <div class="arrow"></div>
+  </div>
+
+  <div class="dropdown-list" *ngIf="isDropdownOpen">
+    <div class="dropdown-item"
+         *ngFor="let option of options"
+         (click)="onSelect(option)">
+      <img [src]="option.flagUrl" [alt]="option.countryName" class="flag-icon" />
+      {{ option.countryName }}
+    </div>
+  </div>
+</div>

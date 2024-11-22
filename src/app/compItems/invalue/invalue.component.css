@@ -1,0 +1,75 @@
+.input-container {
+  float: right;
+}
+
+  .input-container label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+.input-wrapper {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+  input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  /* Hide the input field on small screens */
+  input {
+    display: none;
+  }
+
+  /* Show only the search icon on small screens */
+  .search-icon {
+    display: block; /* Show the icon only */
+    font-size: 20px; /* Increase icon size on smaller screens */
+    padding: 8px;
+    margin: 9px;
+  }
+
+    .search-icon:hover {
+      background-color: grey;
+      border-radius: 20px;
+    }
+}

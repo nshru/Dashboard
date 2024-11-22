@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-4 equal-height">
+      <h3 style="text-align:center;">History</h3>
+      <div class="content">
+        <div *ngFor="let card of cards;" class="show">
+          <div class="image">
+            <img src="{{card.img}}" alt="Img" />
+          </div>
+          <div class="title">
+            <h4>{{ card.title }}</h4>
+            <h6 style="color:chocolate;">{{ card.artist }}</h6>
+          </div>
+          <div class="bid">
+            <h4>{{card.bid}} ETH</h4>
+          </div>
+          <div class="time">
+            <h4>{{card.time}}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-4 equal-height">
+      <div class="content1">
+        <div class="content-info">
+          <div class="logo">
+            <mat-icon>fireplace</mat-icon>
+          </div>
+          <div class="heading">
+            <span style="color:brown;">Bussiness Design</span>
+            <h3>New Lession is available</h3>
+          </div>
+        </div>
+        <div class="content1-info">
+          <div class="bid">
+            <h4 style="color:blue;">85 mins </h4>
+          </div>
+          <div class="button-app">
+            <app-button label="Get Started"
+                        color="primary"
+                        size="small"
+                        width="100px"
+                        radius="10px">
+            </app-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-lg-6 equal-height1">
+      <div class="content">
+        <div class="calendar-wrapper">
+          <app-calender></app-calender>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,12 @@
+.head-part {
+  display: flex;
+  margin-left: 50px;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.profile-data {
+  margin: 20px;
+}

@@ -1,0 +1,94 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-6 equal-height">
+      <div class="column1">
+
+        <div class="Team-members">
+          <h4 style="padding:20px;">Team members</h4>
+          <div class="information" *ngFor="let profile of Profiles;">
+            <div class="image">
+              <img src="{{profile.img}}" alt="T-Member" />
+            </div>
+            <div class="name">
+              <h4 style="color:blue;">{{profile.Name}}</h4>
+              <h6 style="color:brown;">{{profile.title}}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-6 equal-height1">
+      <div class="column2">
+        <div class="search-bar">
+          <div class="title">
+            <h4 style="padding:5px;">Complex Table</h4>
+          </div>
+          <div class="search">
+            <app-invalue [value]="searchinformation"
+                       [placeholder]="'Search here...'"
+                       [type]="'text'"
+                       [search]="true"
+                       (searchEvent)="onSearch($event)">
+            </app-invalue>
+          </div>
+        </div>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>STATUS</th>
+            <th>DATE</th>
+            <th>PROGRESS</th>
+            <th>QUANTITY</th>
+            <th>BALANCE</th>
+          </tr>
+          <tr *ngFor="let table of  getCurrentRecords();">
+            <td>{{table.ID}}</td>
+            <td>{{table.Name}}</td>
+            <td>{{table.Status}}</td>
+            <td>{{table.Date}}</td>
+            <td>{{table.progress}}</td>
+            <td>{{table.Quantity}}</td>
+            <td>{{table.Balance}}</td>
+          </tr>
+        </table>
+
+        <!-- Pagination controls -->
+        <div class="page">
+          <div class="slide-info">
+            <h5>Showing slide {{ currentPage }} of {{ totalSlides }}.</h5>
+          </div>
+          <div class="pagination">
+            <app-button label="Previous"
+                        color="primary"
+                        size="small"
+                        width="70px"
+                        radius="5px"
+                        (click)="prevSlide()">
+            </app-button>
+
+            <!-- Display page numbers -->
+            <span *ngFor="let page of [].constructor(totalSlides); let i = index">
+              <app-button label="{{ i + 1 }}"
+                          color="secondary"
+                          size="small"
+                          width="30px"
+                          radius="20px"
+                          [class.active]="currentPage === i + 1"
+                          (click)="goToSlide(i + 1)">
+              </app-button>
+            </span>
+            <app-button label="Next"
+                        color="primary"
+                        size="small"
+                        width="50px"
+                        radius="5px"
+                        (click)="nextSlide()">
+            </app-button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

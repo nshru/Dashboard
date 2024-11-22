@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-4 equal-height">
+      <div class="content1">
+        <img src="assets/images/fingerprint.png" width="50" height="50" alt="authentication" />
+        <h3>Control card security in-app with a tap</h3>
+        <p style="font-size:smaller;color:brown;">Discover our cards benefits, with one tap.</p>
+        <app-button label="Cards"
+                    color="primary"
+                    size="medium"
+                    width="280px"
+                    radius="10px">
+        </app-button>
+
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-4 equal-height">
+      <div class="content">
+        <app-checkbox [checked]="isChecked"
+                      [disabled]="false"
+                      [required]="isRequired"
+                      [label]="'Tasks'"
+                      (checkedChange)="onCheckboxChange($event)">
+        </app-checkbox>
+
+        <div *ngFor="let checkbox of checkboxes; let i = index">
+          <app-checkbox [checked]="checkbox.checked"
+                        [disabled]="checkbox.disabled"
+                        [required]="isRequired"
+                        [label]="checkbox.label"
+                        (checkedChange)="onCheckboxChange($event)">
+          </app-checkbox>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-4 equal-height">
+      <div class="content2">
+
+        <highcharts-chart [Highcharts]="Highcharts"
+                          [options]="verticalBarChartOptions"
+                          style="width: 90%; height: 200px; display: block;"></highcharts-chart>
+
+      </div>
+    </div>
+  </div>
+</div>

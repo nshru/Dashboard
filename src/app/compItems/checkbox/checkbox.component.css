@@ -1,0 +1,19 @@
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+  .checkbox-container input {
+    margin-right: 10px; /* Add space between the checkbox and the label */
+  }
+
+  .checkbox-container label {
+    font-size: 15px;
+    font-weight: normal;
+    padding: 10px;
+  }
+
+    .checkbox-container label:hover {
+      background-color: brown;
+    }

@@ -1,0 +1,126 @@
+.logo-title {
+  display: flex;
+  align-items: center; /* Vertically align logo and name */
+  gap: 15px; /* Space between logo and name */
+  height: 90px;
+  background-color: #4d026d;
+  color:white;
+  padding: 10px;
+  position: fixed;
+  width: 280px;
+}
+
+  .logo-title img {
+    width: 40px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 14px;
+  }
+
+.container {
+  width: 300px;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 9px;
+}
+
+  .sidebar-nav a i {
+    margin-right: 5px; /* Adjust the spacing between the icon and the text */
+  }
+
+  .sidebar-nav a:hover {
+    background-color: #4d026d;
+    color: white;
+  }
+
+.sidebar-nav {
+  background-color: #bc3cf3;
+  border-radius: 4px;
+  height: 100vh;
+  padding-top: 12px;
+  overflow-y: auto;
+  top: 90px;
+  bottom: 0px;
+  position: fixed;
+  width: 300px;
+}
+
+
+@media (max-width: 800px) {
+  .logo-title {
+    width: 100px;
+    padding: 15px;
+  }
+
+    .logo-title span {
+      display: none;
+    }
+
+  .sidebar-nav a {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+    .sidebar-nav a i {
+      font-size: 22px;
+      margin-left: 8px;
+    }
+
+
+  .sidebar-nav {
+    width: 100px;
+    padding-top: 10px;
+  }
+
+  .logo-title img {
+    width: 40px;
+  }
+
+  .sidebar-nav a i {
+    margin-right: 5px;
+  }
+
+
+  .sidebar-nav a span {
+    display: none;
+  }
+
+  .container {
+    width: 100px;
+  }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .logo-title {
+    width: 70px;
+    /* Center logo and title on small screens */
+    padding: 10px;
+  }
+
+    .logo-title span {
+      display: none;
+    }
+
+  .sidebar-nav {
+    width: 70px; /* Even smaller sidebar for very small screens */
+  }
+
+    .sidebar-nav a {
+      padding: 10px;
+      font-size: 12px; /* Very small font for very small screens */
+    }
+
+  .logo-title img {
+    width: 25px; /* Make logo even smaller */
+  }
+
+  /* Hide Text Labels for Very Small Screens */
+  .sidebar-nav a span {
+    display: none; /* Hide text labels completely */
+  }
+}

@@ -1,0 +1,12 @@
+label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.required-marker {
+  color: red;
+  font-size: 16px;
+  margin-left: 2px;
+}

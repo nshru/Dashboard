@@ -1,0 +1,39 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.equal-height .content {
+  flex-grow: 1;
+}
+
+.column {
+  background-color: mediumslateblue;
+  padding: 20px;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+}
+
+.equal-height {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  height: 80px;
+  width: 300px;
+}
+
+p {
+  color: gray;
+}
+
+.content-bar {
+  display: flex;
+}
+
+.icon-card {
+  font-size: 20px;
+  margin: 5px 10px;
+}

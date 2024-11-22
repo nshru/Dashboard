@@ -1,0 +1,104 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.equal-height {
+  height: 350px;
+  width: 400px;
+  background-color: azure;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.equal-height1 {
+  height: 300px;
+  width: 400px;
+  background-color: azure;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+/* Slideshow container styles */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Style for each content (slide) */
+.content1 {
+  display: none;
+  transition: opacity 0.5s ease;
+  padding: 20px;
+}
+
+  .content1.active {
+    display: block;
+    opacity: 1;
+  }
+
+.content1-info {
+  padding: 10px;
+  display: flex;
+}
+
+.image img {
+  width: 350px;
+  border-radius: 8px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+
+
+button {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+  button.prev {
+    left: 0;
+  }
+
+  button.next {
+    right: 0;
+  }
+
+  /* Button hover effect */
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+.button-app {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.bid {
+  margin-top: 20px;
+}
+
+.Title {
+  display: flex;
+}
+
+.slide {
+  margin-left: 100px;
+}
+
+.column1 {
+  padding: 10px;
+}
